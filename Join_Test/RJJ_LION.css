@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
+
+body {background:#4d4d4d}
+* {margin:0px; padding:0px;}
+ul,ol,li {list-style:none;}
+a {outline:0; text-decoration:none;}
+img, button {border:0;}
+
+
+/*메인 섹션*/
+main {
+  width:700px; background:#fff;
+  margin:300px auto; 
+  border-radius:15px; display:flex; flex-flow:column wrap;
+}
+main>div {box-sizing:border-box;}
+
+
+/*상단 및 클로징*/
+#title {width:100%; height:80px; border-bottom:1px solid #8c8c8c; position:relative;}
+#title>p {text-align:center; font:bold 20px/80px 'Gowun Batang'; color:#333;}
+#title>span {
+  width:21px; height:21px; background:url('RJJ_LION_img/close.png') no-repeat;
+  position:absolute; right:25px; top:30px; cursor: pointer;
+}
+
+
+
+/*기본 홈페이지 회원가입 및 로그인 영역*/
+#contain {width:100%; height:100%; padding:35px;}
+#contain>#member_login {margin-bottom:25px; display:flex; flex-flow:column wrap;}
+
+#contain>#member_login>.question {font:bold 1.5em "Gowun Batang"; margin-bottom:40px;}
+
+#contain>#member_login>.login_keep {
+  width:190px; height:22px; margin-bottom:30px;
+  position:relative; cursor:pointer;
+}
+#contain>#member_login>.login_keep>span {
+  background:url(RJJ_LION_img/icon_check_empty.png);
+  width:22px; height:22px;
+  position:absolute; left:0px;
+}
+#contain>#member_login>.login_keep>p {
+  font:1.3em/22px "Gowun Batang"; color:#8c8c8c;
+  margin-bottom:40px; display:inline-block;
+  margin-left:30px;
+}
+#contain>#member_login>.login_keep:hover>span {background:url(RJJ_LION_img/icon_check.png);}
+#contain>#member_login>.login_keep:hover>p {color:#555; font-weight:bold;}
+#contain>#member_login>.login_keep.on>span {background:url(RJJ_LION_img/icon_check.png);}
+#contain>#member_login>.login_keep.on>p {color:#555; font-weight:bold;}
+
+#contain>#member_login>.member_login_box {
+  width:100%; height:85px; background:#2f80ed; border-radius:8px;
+  transition:0.2s all; margin-bottom:20px; box-sizing:border-box;
+}
+#contain>#member_login>.member_login_box>a{
+  width:100%; height:100%; display:block; color:#fff;
+  font:bold 2em/85px "Gowun Batang"; text-align:center;
+}
+#contain>#member_login>.member_login_box:hover {background:#fff; border:2px solid #2f80ed;}
+#contain>#member_login>.member_login_box:hover>a {color:#2f80ed;}
+
+#contain>#member_login>.join {
+  width:100%; height:25px;
+  text-align:center;
+  font:1.2em "Gowun Batang"; color:#8c8c8c;
+  margin-bottom:30px;
+}
+#contain>#member_login>.join>a {margin:0 20px; color:#8c8c8c;}
+
+#contain>#member_login>.line {
+  width:100%; height:25px;
+  font:1.3em/25px "Gowun Batang"; color:#8c8c8c; text-align:center;
+  position:relative;
+}
+#contain>#member_login>.line>hr {
+  border-bottom:1px solid #8c8c8c; width:270px; display:inline-block;
+  position:absolute; top:10px;
+}
+#contain>#member_login>.line>hr:nth-child(1) {left:0px;}
+#contain>#member_login>.line>hr:nth-child(2) {right:0px;}
+
+
+
+/*SNS 로그인 영역*/
+#contain>#sns_login>li {
+  width:100%; height:70px; border-radius:8px; margin-bottom:10px;
+  position:relative; box-sizing:border-box;
+}
+#contain>#sns_login>li>a {
+  width:100%; height:100%; display:block; text-align:center;
+  font:1.5em/70px "Gowun Batang"; color:#8c8c8c;
+}
+
+#contain>#sns_login>li:nth-child(1) {border:2px solid #8c8c8c;}
+#contain>#sns_login>li:nth-child(2) {border:2px solid #4face1;}
+#contain>#sns_login>li:nth-child(3) {border:2px solid #35cd48;}
+#contain>#sns_login>li:nth-child(4) {border:2px solid #f4d26a;}
+
+#contain>#sns_login>li>a>span {
+  width:44px; height:44px; box-sizing:border-box;
+  background-image:url('RJJ_LION_img/css_sprites_retina.png');
+  position:absolute; left:20px; top:20%;
+}
+#contain>#sns_login>li:nth-child(1)>a>span {background-position:-105px -20px;}
+#contain>#sns_login>li:nth-child(2)>a>span {background-position:-410px -20px;}
+#contain>#sns_login>li:nth-child(3)>a>span {background-position:-20px -20px;}
+#contain>#sns_login>li:nth-child(4)>a>span {background-position:-20px -105px;}
