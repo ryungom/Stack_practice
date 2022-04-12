@@ -8,14 +8,18 @@
     <style>
       @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
 
+      /* css 초기화 */
       * {margin:0; padding:0;}
       body {background-color:gray}
       a {text-decoration:none;}
       ul, li {list-style:none;}
       button {border:none; box-shadow:none;}
 
-      section {position:relative; width:350px; height:140px; border:1px solid #DBDBDB;
-        border-radius:5px; box-sizing:border-box; background-color:#fff; margin:20px auto; }
+      /* wrapper */
+
+      .wrapper {position:relative; width:350px; height:140px; border:1px solid #DBDBDB;
+        border-radius:5px; box-sizing:border-box; background-color:#fff; margin:20px auto;
+        padding:16px; box-sizing:border-box; }
 
       h1 {position:absolute; left:16px; top:20px; 
         font-family:'Spoqa Han Sans Neo';
@@ -26,8 +30,8 @@
       }
 
       button {
-        position:absolute; width:318px; height:40px; background-color:#711BFF;
-        border-radius:4px; top:50px; left:16px; text-align:center;
+        width:318px; height:40px; background-color:#711BFF;
+        border-radius:4px; margin-top:34px; text-align:center;
       }
       
       button>img {width:64px; vertical-align:bottom;}
@@ -39,13 +43,13 @@
       ul>li {display:inline-block; }
       ul>li:nth-child(1)::after {content:"|"; margin-left:5px; color:#767676;}
       ul>li:nth-child(3) {margin-left:100px;}
-      ul>li img {width:15px; height:15px;}
-      ul>li>a {color:#767676; font-size:12px; vertical-align:center;}
+      ul>li img {width:15px; height:15px; vertical-align:bottom;}
+      ul>li>a {color:#767676; font-size:12px; line-height:1;}
 
     </style>
 </head>
 <body>
-    <section>
+    <section class="wrapper">
       <h1>더 편리해진 위니브에 오신 것을 환영합니다</h1>
       <button><img src="images/weniv-logo.png" alt="위니브 로그인 버튼"><p>로그인</p></button>
       <ul class="find">
